@@ -1,5 +1,6 @@
-import React, {Children, useContext} from 'react'
+import React, {useContext} from 'react'
 import useLocalStorage from '../hooks/useLocalStorage'
+
 const ContactsContext = React.createContext()
 
 export function useContacts() {
@@ -14,6 +15,7 @@ export function ContactsProvider({ children }) {
       return [...prevContacts, { id, name }]
     })
   }
+  
   return (
     <ContactsContext.Provider value={{ contacts, createContact }}>
       {children}
