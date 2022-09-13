@@ -5,13 +5,16 @@ import React from 'react'
 import useLocalStorage from './hooks/useLocalStorage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactsProvider } from './contexts/ContactsProvider';
+import { ConversationsProvider } from './contexts/ConversationsProvider';
 
 function App() {
   const [id, setId] = useLocalStorage()
 
   const dashboard = (
     <ContactsProvider>
-      <Dashboard id={id} />
+        <ConversationsProvider>
+          <Dashboard id={id} />
+        </ConversationsProvider>
     </ContactsProvider>
   )
 
