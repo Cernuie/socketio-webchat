@@ -4,6 +4,15 @@ A WhatsApp Clone created with Node.js, React, and Socket.io.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ![Screenshot](/client/public/WhatsAppClone.png)
+
+## To Do: 
+
+The planned features for this project are: 
+
+- Firebase for user authentication
+- Dark mode and other styling
+- Ease of use functionality(currently you can't even press enter to submit a message)
+
 ## Available Scripts
 
 In the project directory, you can run:
