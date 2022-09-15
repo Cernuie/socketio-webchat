@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Tab, Nav, Button, Modal } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 import Conversations from './Conversations'
 import Contacts from './Contacts'
@@ -53,4 +54,8 @@ export default function Sidebar({ id }) {
             </Modal>
         </div>
     )
+}
+
+Sidebar.propTypes = {
+    id: PropTypes.string
 }

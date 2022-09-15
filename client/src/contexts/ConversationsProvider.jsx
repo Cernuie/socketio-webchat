@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect, useCallback } from 'react'
 import useLocalStorage from '../hooks/useLocalStorage'
 import { useContacts } from './ContactsProvider'
 import { useSocket } from './SocketProvider'
+import PropTypes from 'prop-types'
 
 const ConversationsContext = React.createContext()
 
@@ -106,4 +107,9 @@ function arraysEqual(a, b) {
     return a.every((element, index) => {
         return element === b[index]
     })
+}
+
+ConversationsProvider.propTypes = {
+    id: PropTypes.string.isRequired,
+    children: PropTypes.any.isRequired
 }

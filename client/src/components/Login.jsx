@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { Container, Form, Button } from 'react-bootstrap'
 import { v4 as uuidV4 } from 'uuid'
+import PropTypes from 'prop-types'
 
 export default function Login({ onIdSubmit }) {
     const idRef = useRef()
@@ -27,4 +28,8 @@ export default function Login({ onIdSubmit }) {
             </Form>
         </Container>
     )
+}
+
+Login.propTypes = {
+    onIdSubmit: PropTypes.func
 }

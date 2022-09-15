@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import useLocalStorage from '../hooks/useLocalStorage'
+import PropTypes from 'prop-types'
 
 const ContactsContext = React.createContext()
 
@@ -21,4 +22,8 @@ export function ContactsProvider({ children }) {
       {children}
     </ContactsContext.Provider>
   )
+}
+
+ContactsProvider.propTypes = {
+  children: PropTypes.any.isRequired
 }

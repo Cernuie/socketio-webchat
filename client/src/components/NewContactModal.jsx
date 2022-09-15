@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Modal, Form, Button } from 'react-bootstrap'
 import { useContacts } from '../contexts/ContactsProvider'
-
+import PropTypes from 'prop-types'
 
 export default function NewContactModal({ closeModal }) {
     const idRef = useRef()
@@ -33,4 +33,8 @@ export default function NewContactModal({ closeModal }) {
             </Modal.Body>
         </>
     )
+}
+
+NewContactModal.propTypes = {
+    closeModal: PropTypes.func.isRequired
 }
