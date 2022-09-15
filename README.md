@@ -3,7 +3,7 @@
 A WhatsApp Clone created with Node.js, React, and Socket.io.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Screenshot](client\public\WhatsAppClone.png)
+![Screenshot](/client/public/WhatsAppClone.png)
 ## Available Scripts
 
 In the project directory, you can run:
